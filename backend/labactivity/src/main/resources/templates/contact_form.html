@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Contact Form</title>
+</head>
+<body>
+    <h1 th:text="${resourceName == null ? 'Add New Contact' : 'Edit Contact'}"></h1>
+    <form th:action="@{${resourceName == null ? '/contacts/new' : '/contacts/edit'}}" method="post">
+        <input type="hidden" name="resourceName" th:value="${resourceName}" />
+        <div>
+            <label for="givenName">Given Name:</label>
+            <input type="text" id="givenName" name="givenName" required />
+        </div>
+        <div>
+            <label for="familyName">Family Name:</label>
+            <input type="text" id="familyName" name="familyName" required />
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" />
+        </div>
+        <button type="submit" th:text="${resourceName == null ? 'Add Contact' : 'Update Contact'}"></button>
+    </form>
+    <p><a th:href="@{/contacts}">Back to Contacts</a></p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Google Contacts</title>
+</head>
+<body>
+    <h1>Contact List</h1>
+    <p><a th:href="@{/contacts/new}">Add New Contact</a></p>
+    
+    <!-- For demonstration, we display the raw JSON.
+         In practice, parse it into a list and iterate to show contact details. -->
+    <pre th:text="${contacts}"></pre>
+</body>
+</html>
