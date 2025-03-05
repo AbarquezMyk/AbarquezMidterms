@@ -1,4 +1,4 @@
-package main.java.com.abarquez.midterms.controller;
+package com.abarquez.midterms.controller;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

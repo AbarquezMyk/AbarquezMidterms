@@ -1,4 +1,4 @@
-package main.java.com.abarquez.midterms.service;
+package com.abarquez.midterms.service;
 
 import java.util.Map;
 

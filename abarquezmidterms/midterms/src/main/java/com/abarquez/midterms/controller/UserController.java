@@ -1,4 +1,4 @@
-package main.java.com.abarquez.midterms.controller;
+package com.abarquez.midterms.controller;
 
 import java.util.Map;
 
@@ -20,3 +20,4 @@ public class UserController {
         return "<h1>Hello, this is a secured page.</h1>";
     }
 }
+
